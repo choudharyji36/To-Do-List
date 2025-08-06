@@ -86,3 +86,87 @@ h1 {
   background-color: #dc3545;
   color: white;
 }
+
+
+/* ================================
+   ✅ MEDIA QUERIES FOR ALL DEVICES
+================================ */
+
+/* Small Phones (up to 480px) */
+@media (max-width: 480px) {
+  body {
+    padding: 20px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .input-section {
+    flex-direction: column;
+  }
+
+  #task-input,
+  #add-btn {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .task-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .task-buttons {
+    margin-top: 10px;
+  }
+}
+
+/* Tablets (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .container {
+    max-width: 500px;
+  }
+
+  #task-input {
+    font-size: 18px;
+  }
+
+  #add-btn {
+    font-size: 16px;
+  }
+
+  .task-item {
+    font-size: 16px;
+  }
+}
+
+/* Laptops (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    max-width: 600px;
+  }
+
+  .task-item {
+    font-size: 18px;
+  }
+}
+
+/* Large Screens (1025px and above) */
+@media (min-width: 1025px) {
+  .container {
+    max-width: 700px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  #task-input {
+    font-size: 18px;
+  }
+
+  #add-btn {
+    font-size: 18px;
+  }
+}
